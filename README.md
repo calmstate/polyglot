@@ -11,7 +11,10 @@ Polyglot is an innovative software that utilizes LLMs with Ollama to translate t
 - 💻 **Portable and Easy to Install**: Polyglot can be easily installed on your device and is available for Windows, making it accessible for everyone.
 - 💸 **Completely Free**: Enjoy all the features of Polyglot at no cost, providing an accessible translation solution for everyone.
 
-![Polyglot](https://example.com/path-to-your-image.gif)
+<div align="center">
+  <img src="https://github.com/calmstate/polyglot/blob/main/readMeAssets/polyglot.gif" width="400" alt="Polyglot">
+</div>
+
 
 ## Future Enhancements
 
