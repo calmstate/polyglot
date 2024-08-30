@@ -2,7 +2,7 @@
 
 Polyglot is innovative software that utilizes LLMs with Ollama to translate texts in a practical, fast, convenient, and elegant manner. With an intuitive interface and advanced features, Polyglot makes communication in various languages seamless and provides a smooth and efficient translation experience.
 
-![alt text](https://github.com/calmstate/polyglot/blob/main/readMeAssets/header2.png)
+![alt text](https://github.com/calmstate/polyglot/blob/main/readMeAssets/logo.svg)
 
 ## Key Features
 
