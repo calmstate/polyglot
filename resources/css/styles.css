@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0 auto;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+:root{
+    --primary: #50D493;
+    --primary-light: #5af3a7;
+    --secondary: #369666;
+}
+body {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    height: 100vh;
+    margin: 0;
+    color: #3b4b43;
+    background: #1C2124;
+}
+
+#container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.pin-icon {
+    position: fixed;
+    top: 24px;
+    right: 24px;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    z-index: 1000; /* Garante que o ícone fique acima de outros elementos */
+}
+.pin-icon:hover {
+    color: var(--primary);
+}
+.tip{
+    font-size: .7em;
+    text-align: center;
+    color:rgba(0, 0, 0, 0.537);
+    font-weight: bolder;
+    opacity: .7;
+}
+#input-header{
+    padding: -15px;
+    padding-left: 20px;
+    margin-bottom: -10px;
+}
+#logo{
+    width: 140px;
+}
+h2{
+    font-size: 1.2em;
+}
+label{
+    display: inline-block;
+    margin-bottom: 10px;
+    font-weight: 300;
+    opacity: .5;
+    color: var(--primary);
+}
+
+.selectors{
+    display: flex;
+    position: relative;
+    gap: 10px;
+    position: relative;
+    width: 100%;
+}
+select {
+    width: 100%;
+    position: relative;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-radius: 4px;
+    font-size: 14px;
+    color: var(--primary);
+    flex: 1;
+}
+select:nth-child(1){
+    flex: 1;
+}
+
+#input-section{
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#input-section textarea{
+    width: 100%;
+    height: 120px;
+    position: relative;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    color: wheat;
+    outline: none;
+    margin-top: 10px;
+    padding-left: 5px;
+    padding-top: 10px;
+    font-size: 1em;
+    resize: none;
+}
+
+
+#input-section textarea::placeholder, #result textarea::placeholder{
+    color: rgba(255, 255, 255, 0.377);
+}
+
+#input{
+    flex: 1;
+}
+#result{
+    flex: 1;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+#result textarea{
+    width: 100%;
+    height: 215px;
+    padding: 25px;
+    box-sizing: border-box;
+    background: transparent;
+    font-size: 1em;
+    outline: none;
+    border: none;
+    color: wheat;
+    resize: none;
+}
+#buttons{
+    background-color: green;
+    width: 100%;
+    height: 80px;
+    display: flex;
+}
+
+#buttons button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: none;
+    background-color: var(--primary);
+    cursor: pointer;
+    transition: ease all .3s;
+}
+#buttons button:hover{
+    background-color: var(--secondary);
+}
+#buttons button:nth-child(1){
+    border-right: 1px solid var(--secondary);
+}
+#buttons button:nth-child(2){
+    border-right: 1px solid var(--secondary);
+}
+.selectors{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#inverter{
+    width: 40px;
+    display: flex; 
+    justify-content: center;
+    color: var(--primary);
+    opacity: .3;
+    cursor: pointer;
+}
+#inverter:hover{
+    opacity: 1;
+}
+
+textarea::-webkit-scrollbar{
+    background: none;
+    width: 7px;
+}
+textarea::-webkit-scrollbar-thumb{
+    background-color: rgba(0, 0, 0, 0.266);
+    border-radius: 7px;
+
+}
+.pin-background{
+    color: var(--primary)
+}
+
+#splash-screen{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 9999;
+    background-color: #1C2124;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#splash-screen #logo{
+    width: 300px;
+    transition: ease all .3s;
+}

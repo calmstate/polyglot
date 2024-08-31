@@ -1,0 +1,74 @@
+{
+  "$schema": "https://raw.githubusercontent.com/neutralinojs/neutralinojs/main/schemas/neutralino.config.schema.json",
+  "applicationId": "js.neutralino.sample",
+  "version": "1.0.0",
+  "defaultMode": "window",
+  "port": 0,
+  "documentRoot": "/resources/",
+  "url": "/",
+  "enableServer": true,
+  "enableNativeAPI": true,
+  "tokenSecurity": "one-time",
+  "logging": {
+    "enabled": true,
+    "writeToLogFile": true
+  },
+  "nativeAllowList": [
+    "app.*",
+    "os.*",
+    "debug.log",
+    "storage.*",
+    "window.*"
+  ],
+  "modes": {
+    "window": {
+      "title": "Polyglot by CalmState",
+      "width": 600,
+      "height": 810,
+      "minWidth": 600,
+      "minHeight": 810,
+      "center": true,
+      "fullScreen": false,
+      "alwaysOnTop": false,
+      "icon": "/resources/assets/icon.png",
+      "enableInspector": false,
+      "borderless": false,
+      "maximize": false,
+      "hidden": false,
+      "resizable": false,
+      "exitProcessOnClose": false
+    },
+    "browser": {
+      "nativeBlockList": [
+        "filesystem.*"
+      ]
+    },
+ 
+    "chrome": {
+ 
+      "args": "--user-agent=\"Neutralinojs chrome mode\"",
+      "nativeBlockList": [
+        "filesystem.*",
+        "os.*"
+      ]
+    }
+  },
+  "cli": {
+    "binaryName": "Polyglot",
+    "resourcesPath": "/resources/",
+    "extensionsPath": "/extensions/",
+    "clientLibrary": "/resources/js/neutralino.js",
+    "binaryVersion": "5.3.0",
+    "clientVersion": "5.3.0"
+  },
+  "permissions": {
+    "window": true,
+    "storage": {
+      "read": true,
+      "write": true
+    },
+    "app": {
+      "exit": true
+    }
+  }
+}

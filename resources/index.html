@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translator Interface</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+</head>
+<body>
+    <div id="container">
+        <div id="splash-screen">
+            <img src="./assets/logo.svg" id="logo" />  
+            <p>Please 🌟 the project!</p>
+        </div>
+        <div class="pin-icon">
+            <i class="fas fa-thumbtack"  id="pin-icon"></i>
+        </div>
+
+        <div id="input">
+            <div id="input-header">
+                <img src="./assets/logo.svg" id="logo" />  
+            </div>
+            <div id="input-section">
+
+                <dib class="selectors">
+                    <div>
+                        <label for="model-select">Model</label>
+                        <select id="model-select">
+                            <option value="default">Default Model</option>
+                            <option value="advanced">Advanced Model</option>
+                            <option value="custom">Custom Model</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="input-language">From</label>
+                        <select id="input-language">
+                        </select>
+                    </div>
+                    <i class="fas fa-arrows-h" id="inverter"></i>
+                    <div>
+                        <label for="output-language">To</label>
+                        <select id="output-language">
+                        </select>
+                    </div>
+                </dib>
+                <textarea placeholder="Enter text" id="input-text"></textarea>
+            </div>
+        </div>
+
+        <div id="result">
+  
+            <textarea id="output-text" style="flex: 1" placeholder="Translation" readonly></textarea>
+
+            <div id="buttons">
+                <button id="translate-btn"><i class="fa-solid fa-globe"></i> Translate <span class="tip">(CTRL+ENTER)</span></button>
+                <button id="copy-btn"><i class="fas fa-copy"></i> Copy <span class="tip">(CTRL+C)</span></button>
+                <button id="reset-btn"><i class="fas fa-sync-alt"></i> Reset <span class="tip">(CTRL+R)</span></button>
+            </div>
+ 
+        </div>
+
+    </div>
+
+    <script src="/js/neutralino.js"></script>
+    <script src="/js/initialize.js"></script>
+    <script src="/js/app.js" type="module"></script>
+</body>
+</html>
